@@ -115,6 +115,18 @@ function PopulateCombo(combo2, data) {
     $("#ddlMateria").trigger('liszt:updated');
 }
 
+/*------------------Summary-------------------------------------------------------------------------------
+Este método le da la capacidad a un combo de completarse dinámicamente vía Ajax
+
+idCombo: string que representa el valor del atributo id de un combo
+urlGet: de donde saca la info para tu combo.
+
+NOTA: Para que esto funcione correctamente, acordate de armar las estructuras de los objetos del combo
+acorde a las necesidades del método. Para no hacerte leer el método completo...los objetos de tu selectList
+deben contener las properties 'Id' y 'Value'
+
+Enjoy ;)
+----------------------------------------------------------------------------------------------------------*/
 function TurnChosenAjaxOn(idCombo, urlGet) {
     var query = "";
     var input_width = "";
